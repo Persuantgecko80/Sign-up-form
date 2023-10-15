@@ -2,124 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheet.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign-up</title>
 
 </head>
 <body>
-    <form action="example.com/path" method="post">
-        <fieldset>
-            <legend>Contact Details</legend>
-            <label for="first_name">First Name:</label>
-            <input type="text" id="first_name" name="first_name">
-
-            <label for="last_name">Last Name:</label>
-            <input type="text" id="last_name" name="last_name">
-
-            <label for="user_email">Email Address:</label>
-            <input type="email" name="email" id="user_email" placeholder="you@example.com">
-
-            <label for="user_password">Password:</label>
-            <input type="password" name="password" id="user_password">
-
-            <label for="amount">Amount:</label>
-            <input type="number" name="amount" id="amount">
-
-            <label for="dob">Date of Birth:</label>
-            <input type="date" name="dob" id="dob">
-        </fieldset>
-        <fieldset>
-            <legend>Delivery Details</legend>
-
-            <label for="street_address">Street Address:</label>
-            <input type="text" name="street_address" id="street_address">
-
-            <label for="text">City</label>
-            <input type="text" name="city" id="city">
-
-            <label for="zip_code">Zip-Code</label>
-            <input type="text" name="zip-code" id="zip-code">
-        </fieldset>
-        <fieldset>
-            <legend>Choose a Car</legend>
-            <select name="Car" id="car">
-                <option value="none" selected>Select one</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="tesla">Tesla</option>
-                <option value="volvo">Volvo</option>
-                <option value="bmw">BMW</option>
-                <option value="mini">Mini Cooper</option>
-                <option value="ford">Ford</option>
-            </select>
-        </fieldset>
-        <fieldset>
-            <legend>Choose a Accessory</legend>
-            <select name="fashion" id="fashion">
-                <option value="none">Select One</option>
-                <optgroup label="Clothing">
-                    <option value="t-shirt">T-Shirt</option>
-                    <option value="sweater">Sweater</option>
-                    <option value="coats">Coats</option>
-                </optgroup>
-                <optgroup label="Foot Wear">
-                    <option value="sneakers">Sneakers</option>
-                    <option value="boots">Boots</option>
-                    <option value="sandals">Sandals</option>
-                </optgroup>
-            </select>
-        </fieldset>
-        <fieldset>
-            <legend>Choose a Ticket</legend>
-            <h1>Ticket Type</h1>
-            <div>
-                <input type="radio" name="child" id="ticket_type" value="child">
-                <label for="child">Child</label>
+    <div class="content">
+        <div class="picture">
+            <div class="logo">
+                <img src="background left.webp" alt="sand wall">
+                <h1 class="monkey">Monkey</h1>
             </div>
-            <div>
-                <input type="radio" name="adult" id="adult" value="adult" checked>
-                <label for="adult">Adult</label>
-            </div>
-            <div>
-                <input type="radio" name="senior" id="senior" value="senior">
-                <label for="senior">Senior</label>
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend>Choose a Topping</legend>
-            <h1>Pizza Toppings</h1>
-            <div>
-                <input type="checkbox" name="topping" id="saussage" value="saussage">
-                <label for="saussage">Saussage</label>
-            </div>
-            <div>
-                <input type="checkbox" name="topping" id="pineapple" value="pineapple">
-                <label for="pineapple">Pineapple</label>
-            </div>
-            <div>
-                <input type="checkbox" name="topping" id="muchrooms" value="mushrooms">
-                <label for="mushrooms">Mushrooms</label>
-            </div>
-            <div>
-                <input type="checkbox" name="topping" id="corn" value="corn">
-                <label for="corn">Corn</label>
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend>Agreements</legend>
-            <h1>Terms and Agreements</h1>
-            <div>
-                <input type="checkbox" name="news_letter" id="newsletter" checked>
-                <label for="newsletter">Send me the newsletter</label>
-            </div>
-            <div>
-                <input type="checkbox" name="tac" id="tac" value="tac">
-                <label for="tac">Terms & Conditions</label>
-            </div>
-        </fieldset>
-        <div>
-            <button type="submit">Submit Form</button>
-            <button type="reset">Reset Form</button>
         </div>
-    </form>
+        <div>
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+            <p>Sign up <em>now</em> to get started.</p>
+            <p>You <em>know</em> you want to.</p>
+        </div>
+        <form action="#">
+            <div class="form">
+                <h3 class="form-title">Lets do this!</h3>
+                <div class="input">
+                    <label for="first_name">FIRST NAME</label>
+                    <input type="text" name="first_name" id="first_name">
+                </div>
+                <div class="input">
+                    <label for="last_name">LAST NAME</label>
+                    <input type="text" name="last_name" id="last_name">
+                </div>
+                <div class="input">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="input">
+                    <label for="phone_number">PHONE NUMBER</label>
+                    <input type="text" name="phone_number" id="phone_number">
+                </div>
+                <div class="input">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="input">
+                    <label for="confirm_password">CONFIRM PASSWORD</label>
+                    <input type="password" name="confirm_password" id="confirm_password">
+                </div>
+            </div>
+            <div class="button"><button type="submit">Create Account</button></div>
+        </form>
+        <div class="log-in"><p>Already have an account?</p><a href="#">Log in</a></div>
+    </div>
 </body>
 </html>
