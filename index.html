@@ -8,6 +8,7 @@
 </head>
 <body>
     <form action="example.com/path" method="post">
+        <h2>Personal Info</h2>
         <label for="first_name">First Name:</label>
         <input type="text" id="first_name" name="first_name">
 
@@ -25,6 +26,46 @@
 
         <label for="dob">Date of Birth</label>
         <input type="date" name="dob" id="dob">
+
+        <textarea name="comments" id="comments" cols="60" rows="10" placeholder="Tell us your thoughts."></textarea>
+
+        <select name="Car" id="car">
+            <option value="none" selected>Choose a car</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="tesla">Tesla</option>
+            <option value="volvo">Volvo</option>
+            <option value="bmw">BMW</option>
+            <option value="mini">Mini Cooper</option>
+            <option value="ford">Ford</option>
+        </select>
+
+        <select name="fashion" id="fashion">
+            <option value="none">Choose one</option>
+            <optgroup label="Clothing">
+                <option value="t-shirt">T-Shirt</option>
+                <option value="sweater">Sweater</option>
+                <option value="coats">Coats</option>
+            </optgroup>
+            <optgroup label="Foot Wear">
+                <option value="sneakers">Sneakers</option>
+                <option value="boots">Boots</option>
+                <option value="sandals">Sandals</option>
+            </optgroup>
+        </select>
+
+        <h1>Ticket Type</h1>
+        <div>
+            <input type="radio" name="child" id="ticket_type" value="child">
+            <label for="child">Child</label>
+        </div>
+        <div>
+            <input type="radio" name="adult" id="adult" value="adult">
+            <label for="adult">Adult</label>
+        </div>
+        <div>
+            <input type="radio" name="senior" id="senior" value="senior">
+            <label for="senior">Senior</label>
+        </div>
     </form>
 </body>
 </html>
